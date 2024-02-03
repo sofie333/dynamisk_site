@@ -90,10 +90,11 @@ li {
   color: rgb(166, 135, 94);
 }
 
-.productlist main {
+.productlist_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 310px));
   gap: 2rem;
+  margin-top: 2em;
 }
 
 .productlist main h2 {
@@ -105,6 +106,14 @@ li {
 .productlist article a {
   text-decoration: none;
   line-height: 1.5rem;
+}
+
+.productlist article.soldout::before {
+  content: "Sold Out";
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 1rem;
 }
 
 .image {
