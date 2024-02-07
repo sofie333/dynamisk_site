@@ -14,9 +14,10 @@
             <h1>Cool Clothes</h1>
         </a>
         <nav id="navbar">
-            <li>
-                <a href="kategori.html">Kategorier</a>
-            </li>
+            <ul>
+                <li>
+                    <a href="kategori.html">Kategorier</a>
+                </li>
             </ul>
             <ul>
                 <li>
@@ -78,22 +79,22 @@
         </article> -->
 
     </main>
-    <script src="script.js"></script>
+    <script src="produktliste.js"></script>
 </body>
 
 </html>
 <template id="productlist_template">
-    <article class="productlist_article">
-        <img class="image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-            alt="Sahara Team India Fanwear Round Neck Jersey">
-        <h3 class="productlist_name">Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="brand">Nike</p>
-        <p class="type">T-shirt</p>
-        <p class="price"> <span>Før</span>"DKK 1595,-" </p>
-        <div class="discounted">
-            <p>Nu DKK 1560,-</p>
-            <p>-34%</p>
-        </div>
-        <a class="read_more" href="produkt.html">Læs mere</a>
-    </article>
+    <a class="read_more" href="produkt.html">
+        <article class="productlist_article">
+            <span class="sold_out">Sold out</span>
+            <img class="image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+                alt="Sahara Team India Fanwear Round Neck Jersey">
+            <h3 class="productlist_name">Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p class="brand">Nike</p>
+            <p class="type">T-shirt</p>
+            <p class="price"> <span>Før</span>"DKK 1595,-" </p>
+            <p class="discounted">
+            </p>
+        </article>
+    </a>
 </template>
