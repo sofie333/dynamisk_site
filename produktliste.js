@@ -3,6 +3,8 @@ window.addEventListener("DOMContentLoaded", init);
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
+document.querySelector("h2").textContent = category;
+
 // const productlistURL = "https://kea-alt-del.dk/t7/api/products?category=" + category;
 
 let productlistTemplate;

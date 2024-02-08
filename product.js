@@ -26,6 +26,8 @@ function showProduct(product) {
   document.querySelector(".info .product_farve").textContent = product.basecolour;
   document.querySelector(".info .produk_yr").textContent = product.productionyear;
 
+  document.querySelector(".back a").href = "produktliste.html?category=" + product.category;
+
   //produktet er udsolgt
   if (product.soldout == 1) {
     document.querySelector(".product_img").classList.add("soldOut");
