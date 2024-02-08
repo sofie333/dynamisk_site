@@ -185,8 +185,21 @@ button:hover {
   color: white;
 }
 
+.product .sold_out {
+  position: absolute;
+  padding: 0.7rem;
+  background-color: red;
+  z-index: 1;
+  margin: 3rem;
+  color: white;
+}
+
 .none {
   display: none;
+}
+
+.udstreget {
+  text-decoration: line-through;
 }
 
 .categorylist {
@@ -222,6 +235,17 @@ button:hover {
 .purchasebox .price {
   font-size: 1.6rem;
   margin-top: 2%;
+}
+
+.purchasebox .new_price {
+  font-size: 1.6rem;
+  margin-top: 2%;
+}
+
+.purchasebox .discounted {
+  margin-top: 1%;
+  margin-right: 90%;
+  padding: 0.5rem;
 }
 
 @media (min-width: 1000px) {

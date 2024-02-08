@@ -30,6 +30,12 @@ function init() {
   //   });
 }
 
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+  const discountAmount = (originalPrice * discountPercentage) / 100;
+  const discountedPrice = originalPrice - discountAmount;
+  return discountedPrice.toFixed(2);
+}
+
 //looper og kalder showProductlist
 function showProductlist(productlistJSON) {
   let productlistClone;
@@ -60,11 +66,14 @@ function showProductlist(productlistJSON) {
       productlistClone.querySelector(".sold_out").classList.add("none");
     }
 
+    //produktet er på udsalg
     if (productlist.discount == null) {
       console.log("discount");
       productlistClone.querySelector(".discounted").classList.add("none");
     } else {
       productlistClone.querySelector(".discounted").textContent = `-${productlist.discount}%`;
+      productlistClone.querySelector(".new_price").textContent = `Ny pris ${calculateDiscountedPrice(productlist.price, productlist.discount)} DKK`;
+      productlistClone.querySelector(".price").classList.add("udstreget");
     }
 
     //appende
